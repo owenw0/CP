@@ -1,5 +1,5 @@
 # CP
 
-Collection of solutions for problems found on the CCC.
+Collection of solutions for competitive programming problems.
 
 Probably not very good.
