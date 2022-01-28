@@ -1,7 +1,3 @@
-import sys
-
-input = sys.stdin.readline
-
 row_count, col_count, choices = int(input()), int(input()), int(input())
 
 rows, cols = [False] * row_count, [False] * col_count
