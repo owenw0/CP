@@ -20,10 +20,10 @@ int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    string str;
+    string word;
     for (int i = 0; i < 5; i++) {
-        cin >> str;
-        permute(str, 0, str.size() - 1);
+        cin >> word;
+        permute(word, 0, word.size() - 1);
     }
 
     sort(permutations.begin(), permutations.end(),
