@@ -5,11 +5,11 @@ int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    string str;
+    string word;
     for (int i = 0; i < 5; i++) {
-        cin >> str;
+        cin >> word;
         do {
-            cout << str << "\n";
-        } while (next_permutation(str.begin(), str.end()));
+            cout << word << "\n";
+        } while (next_permutation(word.begin(), word.end()));
     }
 }
