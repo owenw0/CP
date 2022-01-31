@@ -32,11 +32,10 @@ int main() {
                 col.erase(x);
             }
         }
-
     }
     int total = 0;
-    total += m * col.size();
-    total += n * row.size();
+    total += col.size() * m;
+    total += row.size() * n;
     total -= 2 * row.size() * col.size();
 
     cout << total << "\n";
