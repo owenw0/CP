@@ -1,5 +1,3 @@
 # CP
 
-Collection of solutions for competitive programming problems.
-
-Probably not very good.
+Collection of solutions and resources for competitive programming problems.
