@@ -22,17 +22,17 @@ public:
         }
         visited[start] = true;
 
-        queue<int> queue;
-        queue.push(start);
-        while (!queue.empty()) {
-            start = queue.front();
+        queue<int> q;
+        q.push(start);
+        while (!q.empty()) {
+            start = q.front();
             cout << start << " ";
-            queue.pop();
+            q.pop();
 
             for (auto i = adj[start].begin(); i != adj[start].end(); i++) {
                 if (!visited[*i]) {
                     visited[*i] = true;
-                    queue.push(*i);
+                    q.push(*i);
                 }
             }
         }
