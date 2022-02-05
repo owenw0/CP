@@ -1,14 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int M, N, x;
 vector<int> adj[1000010];
+bool visited[1000010];
+queue<int> q;
 
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    int M, N; cin >> M >> N;
-    int x;
+    cin >> M >> N;
 
     for (int i = 1; i <= M; i++) {
         for (int j = 1; j <= N; j++) {
@@ -17,9 +19,7 @@ int main() {
         }
     }
 
-    bool visited[1000010];
     visited[1] = true;
-    queue<int> q;
     q.push(1);
 
     while (!q.empty()) {
