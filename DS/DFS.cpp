@@ -1,11 +1,14 @@
+// Adapted code from GeeksforGeeks
+// https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+
 #include <bits/stdc++.h>
 using namespace std;
 
+bool visited[1000000];
+vector<int> adj[100000];
+
 class Graph {
 public:
-    map<int, bool> visited;
-    map<int, list<int> > adj;
-
     void addEdge(int node1, int node2) {
         adj[node1].push_back(node2);
     }
@@ -19,6 +22,7 @@ public:
                 dfs(*i);
             }
         }
+        // do stuff here
     }
 };
 

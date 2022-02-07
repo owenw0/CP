@@ -1,3 +1,6 @@
+// Adapted code from GeeksforGeeks
+// https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+
 #include <bits/stdc++.h>
 using namespace std;
 
